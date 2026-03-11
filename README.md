@@ -72,6 +72,8 @@ Responsibilities include:
 - writing task data to disk
 - loading tasks from disk
 - maintaining the JSON file
+- `export_tasks_json`: Export tasks to a JSON formatted string
+- `save_task`: Save a single task to storage
 
 Separating storage from business logic allows the application to easily switch to other storage systems in the future.
 
@@ -89,3 +91,5 @@ Utility functions provide reusable helpers such as:
 # Installation
 
 Clone the repository:
+
+
