@@ -210,6 +210,22 @@ completed = manager.list_completed()
 
 ---
 
+### `search_tasks(query)`
+
+Finds and returns tasks matching the query.
+
+Parameters:
+
+- **query (str)** — search keyword
+
+Example:
+
+```python
+results = manager.search_tasks("keyword")
+```
+
+---
+
 # Storage Layer
 
 The `TaskStorage` class is responsible for persisting tasks to disk.
@@ -278,6 +294,22 @@ Example:
 
 ```python
 tasks = storage.get_tasks()
+```
+
+---
+
+### `export_tasks_json(file_path)`
+
+Exports tasks to a specified JSON file.
+
+Parameters:
+
+- **file_path (str)** — target file path
+
+Example:
+
+```python
+storage.export_tasks_json("backup.json")
 ```
 
 ---
